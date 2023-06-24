@@ -13,15 +13,6 @@ export type TeamType = {
 
 export type LastNextEventType = { left_team: TeamType; right_team: TeamType };
 
-export type EventDetailType = {
-  date: string;
-  type: string;
-  start_at: string;
-  end_at: string;
-  left_team: TeamType;
-  right_team: TeamType;
-};
-
 export type AttendeeType = {
   photo_url: string;
   last_name: string;
@@ -32,7 +23,6 @@ export type AttendeeType = {
 
 export type EventType = {
   profile: ProfileType;
-  event_detail: EventDetailType;
   attendees: AttendeeType[];
   last_event: LastNextEventType;
   next_event: LastNextEventType;
