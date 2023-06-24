@@ -1,0 +1,56 @@
+@import "../../vars.scss";
+
+.avatar {
+  width: 44px;
+  border-radius: 50%;
+}
+
+th {
+  text-align: left;
+  background-color: $almost-grey;
+  color: $medium-grey;
+}
+
+th,
+td {
+  padding: $margin-large;
+  border-bottom: 1px solid $light-grey;
+}
+
+.table {
+  background-color: #fff;
+  padding: $margin-large;
+  margin-top: $margin-small;
+  max-width: 828px;
+  border: 1px solid $light-grey;
+  border-radius: 4px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  min-width: 400px;
+  overflow: scroll;
+  border: 1px solid $light-grey;
+  border-radius: 10px;
+}
+
+.green {
+  background-color: $light-green;
+}
+
+.red {
+  background-color: $light-red;
+}
+
+.green,
+.red {
+  padding: $margin-small;
+  border-radius: 20px;
+}
+
+.nb-players {
+  color: $medium-grey;
+  font-size: $font-medium;
+  margin-left: 3.6em;
+}
