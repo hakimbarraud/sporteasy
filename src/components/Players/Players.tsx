@@ -29,7 +29,7 @@ const Players = () => {
               <td>{player.first_name}</td>
               <td>{player.email}</td>
               <td>
-                <span className={player.status === "absent" ? "green" : "red"}>
+                <span className={player.status === "present" ? "green" : "red"}>
                   {player.status}
                 </span>
               </td>

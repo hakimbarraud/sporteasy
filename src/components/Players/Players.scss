@@ -23,7 +23,7 @@ td {
   margin-top: $margin-small;
   max-width: 828px;
   border: 1px solid $light-grey;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 table {
@@ -47,10 +47,11 @@ table {
 .red {
   padding: $margin-small;
   border-radius: 20px;
+  text-transform: capitalize;
 }
 
 .nb-players {
-  color: $medium-grey;
+  color: $black;
   font-size: $font-medium;
   margin-left: 3.6em;
 }
