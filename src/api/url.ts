@@ -1,4 +1,4 @@
-import { EventDetailType } from "../components/Header/useMatch";
+import { EventDetailType } from "../components/Event/useEvent";
 import apiClient from "./api-client";
 
 interface EventType {

@@ -11,10 +11,10 @@ export interface EventDetailType {
   right_team: TeamType;
 }
 
-const useMatch = () =>
+const useEvent = () =>
   useQuery<EventDetailType>({
     queryKey: ["match"],
     queryFn: () => url.then((res) => res.data.event_detail),
   });
 
-export default useMatch;
+export default useEvent;
