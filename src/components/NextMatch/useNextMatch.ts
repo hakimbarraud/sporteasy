@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { LastNextEventType } from "../../api/types";
+import { LastNextEventType } from "../../api/url";
 import url from "../../api/url";
 
 const useNextMatch = () =>

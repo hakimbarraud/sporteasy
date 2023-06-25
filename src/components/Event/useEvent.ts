@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import url from "../../api/url";
-import { TeamType } from "../../api/types";
+import { TeamType } from "../../api/url";
 
 export interface EventDetailType {
   date: string;

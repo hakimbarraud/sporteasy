@@ -2,7 +2,16 @@ import { EventDetailType } from "../components/Event/useEvent";
 import { AttendeeType } from "../components/Players/usePlayers";
 import { ProfileType } from "../components/Profile/useProfile";
 import apiClient from "./api-client";
-import { LastNextEventType } from "./types";
+
+export interface TeamType {
+  score: number | null;
+  name: string;
+}
+
+export interface LastNextEventType {
+  left_team: TeamType;
+  right_team: TeamType;
+}
 
 interface EventType {
   event_detail: EventDetailType;
