@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.57bbd331.css",
+    "main.js": "/static/js/main.99788147.js",
+    "static/media/Aeonik.otf": "/static/media/Aeonik.fe1dfb07e258495b34b1.otf",
+    "static/media/logo-sporteasy.svg": "/static/media/logo-sporteasy.12db5c2af0d8ef1c4a89682f1bd4c97e.svg",
+    "index.html": "/index.html",
+    "main.57bbd331.css.map": "/static/css/main.57bbd331.css.map",
+    "main.99788147.js.map": "/static/js/main.99788147.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57bbd331.css",
+    "static/js/main.99788147.js"
+  ]
+}
