@@ -8,14 +8,29 @@ $green: #4bcc1f;
 $red: #fe3824;
 $light-green: #dbf5d2;
 $light-red: #f1c3ca;
+$bg-color: #fff;
 
 // Margins //
 $margin-small: 8px;
 $margin-medium: 16px;
 $margin-large: 24px;
 $margin-extralarge: 40px;
+$m-0: 0;
 
 // Font sizes //
 $font-default: 14px;
 $font-medium: 16px;
 $font-large: 24px;
+
+// Borders //
+$border: 1px solid $light-grey;
+$border-radius: 6px;
+$border-rounded: 50%;
+
+// Width //
+$w-full: 100%;
+$max-width: 700px;
+$min-width: 400px;
+
+// Text //
+$text-center: center;

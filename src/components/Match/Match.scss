@@ -2,36 +2,36 @@
 
 .stats-container {
   padding: $margin-medium;
-  background-color: #fff;
+  background-color: $bg-color;
   margin-top: $margin-medium;
-  border: 1px solid $light-grey;
-  border-radius: 4px;
+  border: $border;
+  border-radius: $border-radius;
 }
 
 .heading {
   color: $black;
   font-size: $font-medium;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: $border;
   padding-bottom: 0.5em;
 }
 
 .team-score {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: $text-center;
 }
 
 .name,
 .score {
-  margin: 0 0 $margin-small;
-  padding: 0;
+  margin: $m-0 $m-0 $margin-small;
+  padding: $m-0;
 }
 
 .score {
   padding: 5px 10px;
   background-color: $almost-grey;
-  border: 1px solid $light-grey;
-  border-radius: 4px;
+  border: $border;
+  border-radius: $border-radius;
 }
 
 .red-score {

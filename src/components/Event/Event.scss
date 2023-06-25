@@ -1,35 +1,35 @@
 @import "../../vars.scss";
 
 .event-container {
-  text-align: center;
-  border-radius: 6px;
-  max-width: 700px;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid $light-grey;
+  text-align: $text-center;
+  border-radius: $border-radius;
+  max-width: $max-width;
+  width: $w-full;
+  background-color: $bg-color;
+  border: $border;
   padding-bottom: $margin-medium;
 }
 
 .date {
-  margin: 0;
+  margin: $m-0;
   font-size: $font-medium;
 }
 
 .type {
-  margin: 0;
+  margin: $m-0;
   font-size: 12px;
 }
 
 .date-and-type {
   background-color: $blue-sporteasy;
-  color: #fff;
+  color: $bg-color;
   padding: $margin-small;
-  border-radius: 4px 4px 0px 0px;
+  border-radius: 6px 6px 0px 0px;
 }
 
 .start,
 .end {
-  margin: 0;
+  margin: $m-0;
   color: $medium-grey;
 }
 
@@ -41,8 +41,8 @@
 .teams,
 .scores {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: $text-center;
+  align-items: $text-center;
 }
 
 .teams {
@@ -52,15 +52,15 @@
 .scores {
   padding: $margin-small;
   gap: 0.3em;
-  border: 1px solid $light-grey;
-  border-radius: 4px;
+  border: $border;
+  border-radius: $border-radius;
   background-color: $almost-grey;
   font-weight: bold;
 }
 
 .p-0 {
-  padding: 0;
-  margin: 0;
+  padding: $m-0;
+  margin: $m-0;
 }
 
 .green-col {

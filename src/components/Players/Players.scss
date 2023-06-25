@@ -2,8 +2,8 @@
 
 .avatar {
   width: 33px;
-  border-radius: 50%;
-  text-align: center;
+  border-radius: $border-rounded;
+  text-align: $text-center;
 }
 
 th {
@@ -16,27 +16,26 @@ th {
 th,
 td {
   padding: $margin-medium $margin-small;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: $border;
 }
 
 .table {
-  background-color: #fff;
+  background-color: $bg-color;
   padding: $margin-large;
   margin-top: $margin-small;
-  max-width: 700px;
-  min-width: 400px;
+  max-width: $max-width;
+  min-width: $min-width;
   overflow: scroll;
-  width: 100%;
-  border: 1px solid $light-grey;
-  border-radius: 6px;
+  width: $w-full;
+  border: $border;
+  border-radius: $border-radius;
 }
 
 table {
   border-collapse: collapse;
-  min-width: 400px;
-  overflow: scroll;
-  border: 1px solid #dadfe6;
-  width: 100%;
+  min-width: $min-width;
+  border: $border;
+  width: $w-full;
 }
 
 .green {
@@ -57,5 +56,5 @@ table {
 .nb-players {
   color: $black;
   font-size: $font-medium;
-  margin-top: 0;
+  margin-top: $m-0;
 }
