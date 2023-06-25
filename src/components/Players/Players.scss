@@ -23,7 +23,10 @@ td {
   background-color: #fff;
   padding: $margin-large;
   margin-top: $margin-small;
-  width: 700px;
+  max-width: 700px;
+  min-width: 400px;
+  overflow: scroll;
+  width: 100%;
   border: 1px solid $light-grey;
   border-radius: 6px;
 }
