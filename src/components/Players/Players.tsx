@@ -9,15 +9,17 @@ const Players = () => {
       <h2 className="nb-players">{data?.length} joueurs convoqués</h2>
       <table>
         <thead>
-          <th>Photo</th>
-          <th>Nom</th>
-          <th>Prénom</th>
-          <th>Email</th>
-          <th>Statut</th>
+          <tr>
+            <th>Photo</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Email</th>
+            <th>Statut</th>
+          </tr>
         </thead>
         <tbody>
           {data?.map((player) => (
-            <tr>
+            <tr key={player.photo_url}>
               <td>
                 <img
                   src={player.photo_url}
