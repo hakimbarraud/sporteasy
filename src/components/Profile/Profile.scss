@@ -1,0 +1,28 @@
+@import "../../vars.scss";
+
+.profile {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  max-width: 400px;
+  padding: $margin-extralarge;
+  border: 1px solid $light-grey;
+  border-radius: 4px;
+}
+
+.picture {
+  width: 90px;
+  border-radius: 50%;
+}
+
+h4 {
+  color: $black;
+  font-size: $font-medium;
+  margin-bottom: 3px;
+}
+
+.email,
+.number {
+  margin: 0;
+  color: $medium-grey;
+}
