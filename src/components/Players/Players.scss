@@ -1,19 +1,21 @@
 @import "../../vars.scss";
 
 .avatar {
-  width: 44px;
+  width: 33px;
   border-radius: 50%;
+  text-align: center;
 }
 
 th {
   text-align: left;
   background-color: $almost-grey;
   color: $medium-grey;
+  font-size: $font-default;
 }
 
 th,
 td {
-  padding: $margin-large;
+  padding: $margin-medium $margin-small;
   border-bottom: 1px solid $light-grey;
 }
 
@@ -21,18 +23,17 @@ td {
   background-color: #fff;
   padding: $margin-large;
   margin-top: $margin-small;
-  max-width: 828px;
+  width: 700px;
   border: 1px solid $light-grey;
   border-radius: 6px;
 }
 
 table {
-  margin: 0 auto;
   border-collapse: collapse;
   min-width: 400px;
   overflow: scroll;
-  border: 1px solid $light-grey;
-  border-radius: 10px;
+  border: 1px solid #dadfe6;
+  width: 100%;
 }
 
 .green {
@@ -53,5 +54,5 @@ table {
 .nb-players {
   color: $black;
   font-size: $font-medium;
-  margin-left: 3.6em;
+  margin-top: 0;
 }
