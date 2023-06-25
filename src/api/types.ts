@@ -3,9 +3,11 @@ export type TeamType = {
   name: string;
 };
 
-export type LastNextEventType = { left_team: TeamType; right_team: TeamType };
+export interface LastNextEventType {
+  left_team: TeamType;
+  right_team: TeamType;
+}
 
 export type EventType = {
-  last_event: LastNextEventType;
   next_event: LastNextEventType;
 };

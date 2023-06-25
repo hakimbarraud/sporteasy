@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import { Event } from "./components/Event";
 import Players from "./components/Players/Players";
 import Profile from "./components/Profile/Profile";
+import LastMatch from "./components/LastMatch/LastMatch";
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
         </main>
         <aside>
           <Profile />
+          <LastMatch />
         </aside>
       </div>
     </div>
