@@ -6,8 +6,6 @@ export const Event = () => {
 
   return (
     <div className="event-container">
-      <h1>Feuille de match</h1>
-
       <div className="date-and-type">
         <h2 className="date">{data?.date}</h2>
         <p className="type">{data?.type}</p>
@@ -19,13 +17,13 @@ export const Event = () => {
       </div>
 
       <div className="teams">
-        <h4>{data?.left_team.name}</h4>
+        <h4 className="p-0">{data?.left_team.name}</h4>
         <div className="scores">
-          <p className="right-team">{data?.left_team.score}</p>
-          <p>-</p>
-          <p className="left-team">{data?.right_team.score}</p>
+          <p className="green-col p-0">{data?.left_team.score}</p>
+          <p className="p-0">-</p>
+          <p className="red-col p-0">{data?.right_team.score}</p>
         </div>
-        <h4>{data?.right_team.name}</h4>
+        <h4 className="p-0">{data?.right_team.name}</h4>
       </div>
     </div>
   );

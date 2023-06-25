@@ -6,6 +6,7 @@
   max-width: 828px;
   background-color: #fff;
   border: 1px solid $light-grey;
+  padding-bottom: $margin-medium;
 }
 
 .date {
@@ -21,8 +22,8 @@
 .date-and-type {
   background-color: $blue-sporteasy;
   color: #fff;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: $margin-small;
+  border-radius: 4px 4px 0px 0px;
 }
 
 .start,
@@ -41,31 +42,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5em;
 }
 
 .teams {
-  margin-top: 0;
-  padding-top: 0;
+  gap: 1em;
 }
 
 .scores {
-  background-color: $almost-grey;
-  margin-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: $margin-small;
+  gap: 0.3em;
+  border: 1px solid $light-grey;
   border-radius: 4px;
+  background-color: $almost-grey;
+  font-weight: bold;
 }
 
-.right-team {
+.p-0 {
+  padding: 0;
+  margin: 0;
+}
+
+.green-col {
   color: $green;
 }
 
-.left-team {
+.red-col {
   color: $red;
-}
-
-.right-team,
-.left-team {
-  font-size: $font-large;
 }
