@@ -4,10 +4,27 @@ import useEvent from "./useEvent";
 export const Event = () => {
   const { data } = useEvent();
 
+  let formattedDate: string | undefined;
+
+  const apiDate: string | undefined = data?.date;
+
+  if (apiDate) {
+    const date: Date = new Date(apiDate);
+    const options: Intl.DateTimeFormatOptions = {
+      weekday: "long",
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    };
+    formattedDate = date
+      .toLocaleDateString("fr-FR", options)
+      .replace(/^\w/, (c) => c.toLocaleUpperCase("fr-FR"));
+  }
+
   return (
     <div className="event-container">
       <div className="date-and-type">
-        <h2 className="date">{data?.date}</h2>
+        <h2 className="date">{formattedDate}</h2>
         <p className="type">{data?.type}</p>
       </div>
 
