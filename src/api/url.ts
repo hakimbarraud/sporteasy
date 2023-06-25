@@ -9,6 +9,7 @@ interface EventType {
   attendees: AttendeeType[];
   profile: ProfileType;
   last_event: LastNextEventType;
+  next_event: LastNextEventType;
 }
 
 const url = apiClient.get<EventType>("/frontendInterview");

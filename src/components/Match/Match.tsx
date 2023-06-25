@@ -6,6 +6,8 @@ interface Props {
   leftTeamScore?: number | null | undefined;
   rightTeamName: string | undefined;
   rightTeamScore?: number | null | undefined;
+  redColor?: string;
+  greenColor?: string;
 }
 
 const Match = ({
@@ -14,17 +16,26 @@ const Match = ({
   leftTeamScore,
   rightTeamName,
   rightTeamScore,
+  redColor,
+  greenColor,
 }: Props) => {
+  const renderScore = (score?: number | null) => {
+    if (score != null) {
+      return score.toString();
+    }
+    return "-";
+  };
+
   return (
     <div className="stats-container">
       <h2 className="heading">{title}</h2>
       <div className="team-score">
         <p className="name">{leftTeamName}</p>
-        <p className="score red-score">{leftTeamScore}</p>
+        <p className={`score ${redColor}`}>{renderScore(leftTeamScore)}</p>
       </div>
       <div className="team-score">
         <p className="name">{rightTeamName}</p>
-        <p className="score green-score">{rightTeamScore}</p>
+        <p className={`score ${greenColor}`}>{renderScore(rightTeamScore)}</p>
       </div>
     </div>
   );
