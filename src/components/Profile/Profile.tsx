@@ -1,8 +1,12 @@
 import useProfile from "./useProfile";
 import "./Profile.scss";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const Profile = () => {
-  const { data } = useProfile();
+  const { data, isLoading } = useProfile();
+
+  if (isLoading) return <Skeleton height={250} />;
 
   return (
     <div className="profile">

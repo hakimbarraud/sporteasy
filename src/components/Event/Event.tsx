@@ -1,8 +1,12 @@
 import "./Event.scss";
 import useEvent from "./useEvent";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 export const Event = () => {
-  const { data } = useEvent();
+  const { data, isLoading } = useEvent();
+
+  if (isLoading) return <Skeleton height={150} />;
 
   let formattedDate: string | undefined;
 

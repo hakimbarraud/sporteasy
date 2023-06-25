@@ -1,8 +1,12 @@
 import usePlayers from "./usePlayers";
 import "./Players.scss";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const Players = () => {
-  const { data } = usePlayers();
+  const { data, isLoading } = usePlayers();
+
+  if (isLoading) return <Skeleton height={600} style={{ marginTop: "10px" }} />;
 
   return (
     <div className="table">

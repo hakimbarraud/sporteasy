@@ -1,8 +1,12 @@
 import useLastMatch from "./useLastMatch";
 import Match from "../Match/Match";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const LastMatch = () => {
-  const { data } = useLastMatch();
+  const { data, isLoading } = useLastMatch();
+
+  if (isLoading) return <Skeleton style={{ marginTop: "10px" }} height={180} />;
 
   return (
     <Match
