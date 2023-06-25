@@ -6,7 +6,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 export const Event = () => {
   const { data, isLoading } = useEvent();
 
-  if (isLoading) return <Skeleton height={150} />;
+  if (isLoading)
+    return <Skeleton height={150} style={{ borderRadius: "6px" }} />;
 
   let formattedDate: string | undefined;
 

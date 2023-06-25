@@ -6,7 +6,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 const Profile = () => {
   const { data, isLoading } = useProfile();
 
-  if (isLoading) return <Skeleton height={250} />;
+  if (isLoading)
+    return <Skeleton height={250} style={{ borderRadius: "6px" }} />;
 
   return (
     <div className="profile">
