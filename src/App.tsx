@@ -6,15 +6,17 @@ import Profile from "./components/Profile/Profile";
 
 export const App = () => {
   return (
-    <div>
+    <div className="app">
       <Header />
-      <main className="main">
-        <Event />
-        <Players />
+      <div className="container">
+        <main className="main">
+          <Event />
+          <Players />
+        </main>
         <aside>
           <Profile />
         </aside>
-      </main>
+      </div>
     </div>
   );
 };

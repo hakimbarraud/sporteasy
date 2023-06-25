@@ -25,8 +25,13 @@ code {
     monospace;
 }
 
-.main {
-  width: 90%;
-  margin: 0 auto;
-  box-sizing: border-box;
+.container {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  margin: $margin-large auto;
+  gap: 10px;
+  flex-wrap: wrap;
 }
